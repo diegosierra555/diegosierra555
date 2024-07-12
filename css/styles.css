@@ -1,0 +1,221 @@
+
+/** RESET **/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** FONT **/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/** ********************************************************** **/
+/** DISEÑO DE LA HOME  **/
+/** ********************************************************** **/
+
+
+.grid-container-home{
+    width: 100%;
+    margin: 0 auto;
+    /** habilita la grilla de la home**/ 
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "head head"
+    "nav nav"
+    "main intro"
+    "main intro"
+    "foot foot";
+
+}
+.cabecera{
+    grid-area:head;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(87, 134, 161) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.tituloProyecto{
+    color: aliceblue;
+    justify-self: center;
+    align-self: center;
+    padding-right: 20px;
+    
+}
+
+   /* Menu principal de navegacion horizontal */
+.menuPrincipal {
+    grid-area: nav;
+    display: grid;
+    }
+.menuPrincipal ul{
+        background-color:azure;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        height: 30px;
+        width: 100%;
+        height: 100%;
+    }    
+.menuPrincipal ul li a{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px ;
+    text-decoration: none; /** quita apriencia enlace **/
+}
+.menuPrincipal ul li p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    /** font-style: normal;**/
+    font-style:normal;
+    font-size: 25px ;
+    text-decoration: none; /** quita apriencia enlace **/
+    color: rgb(49, 160, 160);
+}
+.hero{
+    font-family: "Roboto", sans-serif;
+    grid-area:main;
+    display: grid;
+    background-color: aqua;
+    padding: 10px;
+}
+.heroMapaGlobal {
+    border: 5px  ;
+    position: relative;
+}
+.heroMapaGlobal h2{
+    position: absolute;
+    width: 100% ;
+    top: 0;
+    color: rgba(167, 211, 211, 0.938);
+    background-color: rgba(128, 128, 128, 0.404) ;
+
+}
+.heroMapaGlobal img{
+    width: 100% ;
+    object-fit: cover;
+}
+.intro{
+    grid-area:intro;
+    display:grid;
+    background-color:beige;
+    padding: 5px;
+}
+.introLista ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.introLista ul div p {
+
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+.pie{
+    font-family: "Roboto", sans-serif;
+    grid-area:foot ;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(87, 134, 161);
+}
+.pie h4{
+    color: rgb(13, 53, 85);
+}
+.botonAccion{
+    color: cornsilk;
+}
+
+
+
+/**********************************************************/
+/* RESPONSIVE                                             */
+/**********************************************************/
+
+@media screen and  (max-width:700px )
+{
+    .grid-container-home{
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        "head "
+        "nav"
+        "main"
+        "main"
+        "intro"
+        "foot";
+    }
+ 
+    .logo img{
+        display: none;
+    } 
+    .tituloProyecto{
+         font-size: 10px;    
+         text-align: center;
+    }
+
+    .menuPrincipal ul li a{
+        font-size: 15px ;
+    }
+    .menuPrincipal ul li p{
+        font-weight: 700;
+        font-style:normal;
+        font-size: 12px ;
+    }
+   
+    .pie{
+        flex-direction: column;
+    }
+}
+
+@media screen and  (max-width:350px )
+{
+    .grid-container-home{
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        "head "
+        "nav"
+        "main"
+        "main"
+        "intro"
+        "foot";
+    }
+    .cabecera{
+        flex-direction: column;
+    }   
+    .logo img{
+        display: none;
+    } 
+    .tituloProyecto{
+         font-size: 10px;    
+    }
+    .menuPrincipal ul{
+        flex-direction: column;
+        text-align: left;
+    }   
+    .menuPrincipal ul li a{
+        font-size: 10px ;
+        text-align: left;
+    }
+    .menuPrincipal ul li p{
+        font-weight: 700;
+        font-style:normal;
+        font-size: 12px ;
+        text-align: left;
+    }
+
+}
