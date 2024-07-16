@@ -1,10 +1,11 @@
     <!DOCTYPE html>
 <html lang="es">
-    <link rel="stylesheet" href="./css/styles.css"/>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css"/>
     <title>Viajes & Vacaciones</title>
 </head>
 <body>
@@ -23,18 +24,36 @@
         <h1>VIAJES & VACACIONES</h1>
     </div>
 </header>
-<nav class="menuPrincipal">
-        <!-- // aca va el menu de navegacion // -->
-        <!-- LISTA DESORDENADA -->
-        <ul>
-            <li><p>Inicio</p></li>
-            <li><a href="./pages/PuntosInteres.html">Puntos de Interes</a></li>
-            <li><a href="./pages/CiudadesLugares.html">Ciudades & Lugares</a></li>
-            <li><a href="./pages/Viajes.html">Viajes</a></li>
-            <li><a href="./pages/Pasajeros.html">Pasajeros</a></li>
+<!-- ********************************************************** -->
+<!-- BARRA DE NACVEGACION NAVBAR DE BOOTSTRAP ***************-->
+<!-- ********************************************************** -->
+<nav class="navbar navbar-expand-lg bg-body-primary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/PuntosInteres.html">Puntos de Interes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/CiudadesLugares.html">Ciudades & Lugares</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/Viajes.html">Viajes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/trabajo.html">Pasajeros</a>          
+          </li>
         </ul>
-    </nav>
-
+      </div>
+    </div>
+  </nav>
 
 <!-- ********************************************************** -->
 <!-- MAIN INTRO -->
