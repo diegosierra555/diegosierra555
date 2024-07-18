@@ -39,7 +39,7 @@
 
 }
 .tituloProyecto{
-    color: aliceblue;
+    color: beige;
     justify-self: center;
     align-self: center;
     padding-right: 20px;
@@ -77,8 +77,12 @@
     font-family: "Roboto", sans-serif;
     grid-area:main;
     display: grid;
-    background-color: aqua;
+    background-color: beige;
     padding: 10px;
+}
+.heroPresentacion h1{
+    font-size: x-large;
+    color: cornflowerblue;
 }
 .heroMapaGlobal {
     border: 5px  ;
@@ -102,7 +106,7 @@
     background-color:beige;
     padding: 5px;
 }
-.introLista ul {
+.introLista ul{
     height: 100%;
     list-style: none;
     display: flex;
@@ -112,11 +116,17 @@
     font-size: 20px;
     font-family: "Roboto", sans-serif;
 }
-
+.introLista ul div h3 {
+    font-size: large;
+    color: cornflowerblue;
+}
 .introLista ul div p {
+    font-size: medium;
 
-    font-size: 15px;
-    font-family: "Roboto", sans-serif;
+}
+.introLista ul div a {
+    font-size: small;
+   
 }
 /**********************************/
 /* el NAVBAR de los PUNTOS DE INTERES     */
@@ -126,7 +136,7 @@
     margin: 0 auto;
     /** habilita la grilla de los puntos de interes**/ 
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2.5fr 1.5fr 1fr;
     grid-template-rows: auto auto auto auto auto;
     grid-template-areas: 
     "head head head"
@@ -141,44 +151,62 @@
 /**********************************/
 .puntosInteres{
     font-family: "Roboto", sans-serif;
-    grid-area:datos;
     display: flex;
     flex-wrap: wrap;
-    background-color: aqua;
+    grid-area: datos;
+    background-color: beige;
     padding: 10px;
 }
-.poisDetalle{
-    width: 50%;
+.datosPois h3{
+    background-color: rgb(87, 134, 161);
+    color: beige;
 }
-.poisMapa{
+.datosPois label{
+    color:  rgb(87, 134, 161);
+}
+.poisGaleria h5{
+font-weight:bold;
+color:  rgb(87, 134, 161);
+}
+.poisDetalle{
     font-family: "Roboto", sans-serif;
-    width: 25%;
-    background-color: rgb(255, 81, 0);
+    width: 50%;
+    padding: 10px;
+}
+.poisGaleria{
+    font-family: "Roboto", sans-serif;
+    width: 50%;
     padding: 10px;
 }
 
-.poisGaleria{
-    font-family: "Roboto", sans-serif;
-    width: 25%;
-    background-color: aqua;
-    padding: 10px;
-}
 .datosPois_nombre
 {font-size:x-large;
 color: aliceblue;
 background-color: cornflowerblue;
-
 }
+
+/**********************************/
+/* el ASIDE de los PUNTOS DE INTERES     */
+/**********************************/
+
 
 .asideListaCardPois{
     font-family: "Roboto", sans-serif;
     grid-area:aside;
     display: grid;
-    background-color: aqua;
+    background-color: rgba(233, 211, 183, 0.452);
     padding: 10px;
 }
+.asideListaCardPois h3{
+background-color: rgba(161, 118, 61, 0.452);
+text-align:center;
+}
 
-
+.asideListaCardPois h5{
+    background-color: rgba(218, 189, 151, 0.452);
+    text-align:left;
+    }
+    
 
 
 
@@ -203,7 +231,8 @@ background-color: cornflowerblue;
 
 
 /**********************************************************/
-/* RESPONSIVE                                             */
+/* RESPONSIVES                                              */
+/* A DISPOSITIVO TABLET 700PXS                            */
 /**********************************************************/
 
 @media screen and  (max-width:700px )
@@ -235,6 +264,25 @@ background-color: cornflowerblue;
         display: none;
     } 
 
+    .heroPresentacion h1{
+        font-size: medium;
+    }
+    .heroPresentacion p{
+        font-size: small;
+    }
+    .introLista ul div h3 {
+        font-size: medium;
+        color: cornflowerblue;
+    }
+    .introLista ul div p {
+        font-size: small;
+    
+    }
+    .introLista ul div a {
+        font-size: x-small;
+    }
+
+  /***** DE los puntos de interes POIs *******/
     .grid-container-pois{
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto auto auto auto auto auto;
@@ -252,30 +300,34 @@ background-color: cornflowerblue;
         grid-area:datos;
         display: flex;
         flex-direction: column;
-        background-color: aqua;
+        background-color: beige;
         padding: 10px;
         width: 100%;
     }
   .poisDetalle{
     width: 100%;
 }
-.poisMapa{
-    width: 100%;
-    padding: 0;
-}
 .poisGaleria{
     width: 100%;
     padding: 0;
 }
+
+
 .pie{
         flex-direction: column; }
 
 
     }
-
+/**********************************************************/
+/* RESPONSIVES                                              */
+/* A DISPOSITIVO MOBILE 350PXS                            */
+/**********************************************************/
 
 @media screen and  (max-width:350px )
 {
+
+     /***** DE LA HOME *******/
+
     .grid-container-home{
         grid-template-columns: 1fr ;
         grid-template-rows: auto auto auto auto auto auto;
@@ -311,6 +363,18 @@ background-color: cornflowerblue;
         font-size: 12px ;
         text-align: left;
     }
-
+  /***** DE los puntos de interes POIs *******/
+  .grid-container-pois{
+    grid-template-columns: 100% ;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+    "head"
+    "nav  "
+    "aside"
+    "datos"
+    "datos"
+    "datos"
+    "foot";
+}
 
 }
