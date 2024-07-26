@@ -1,0 +1,69 @@
+
+/**************************/
+/* el MAIN de la HOME     */
+/* SECCION introduccion en el ASIDE  */
+/**************************/
+
+.intro{
+    grid-area:intro;
+    display:grid;
+    background-color:beige;
+    padding: 5px;
+    .introLista{
+
+        ul{
+            height: 100%;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            flex-wrap: wrap;
+            font-size: 20px;
+            li{
+
+                div{
+
+                    h3{
+                        font-size: large;
+                        color: cornflowerblue;
+                        &:hover {color: blue;}
+                    }
+                    p{
+                        font-size: medium;
+                    }
+                    a{
+                        font-size: small;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+/**********************************************************/
+/** LISTA de PUNTOS DE INTERES -->
+/**********************************************************/                
+.asideListaCardPois{
+    font-family: "Roboto", sans-serif;
+    grid-area:aside;
+    display: grid;
+    background-color: rgba(233, 211, 183, 0.452);
+    padding: 10px;
+    h3{
+        background-color: rgba(161, 118, 61, 0.452);
+        text-align:center;
+    }
+    div{
+        h5{
+            background-color: rgba(218, 189, 151, 0.452);
+            text-align:left;
+        }
+        img{
+
+        }
+        p{
+
+        }
+    }
+}

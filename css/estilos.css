@@ -1,0 +1,312 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/** FONT **/
+/** ********************************************************** **/
+/** DISEÑO DE LO GENERAL  **/
+/** ********************************************************** **/
+body {
+  font-family: "Roboto", sans-serif; }
+
+/** LO QUE PISE DE BOOTSTRAP **/
+.navbar {
+  grid-area: nav;
+  display: grid;
+  background-color: azure; }
+
+.container-fluid {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  background-color: azure;
+  color: #31a0a0; }
+
+.nav-item {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.container-fluid div a {
+  color: #31a0a0; }
+
+/********************************/
+/** GRID CONTAINER DEL HOME +/
+/********************************/
+.grid-container-home {
+  width: 100%;
+  margin: 0 auto;
+  /** habilita la grilla de la home**/
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "head head"
+ "nav nav"
+ "main intro"
+ "main intro"
+ "foot foot"; }
+
+.cabecera {
+  grid-area: head;
+  font-family: "Roboto", sans-serif;
+  background-color: #5786a1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .cabecera .tituloProyecto {
+    color: beige;
+    justify-self: center;
+    align-self: center;
+    padding-right: 20px;
+    font-size: 20px; }
+
+/********************************/
+/** GRID CONTAINER DEL HOME +/
+/********************************/
+.grid-container-pois {
+  width: 100%;
+  margin: 0 auto;
+  /** habilita la grilla de los puntos de interes**/
+  display: grid;
+  grid-template-columns: 2.5fr 1.5fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "head head head"
+ "nav nav nav "
+ "datos datos aside"
+ "datos datos aside"
+ "foot foot foot"; }
+
+/**************************/
+/* el MAIN de la HOME  */
+/* SECCION hero  */
+/**************************/
+.hero {
+  font-family: "Roboto", sans-serif;
+  grid-area: main;
+  display: grid;
+  background-color: beige;
+  padding: 10px; }
+  .hero .heroPresentacion h1 {
+    font-size: x-large;
+    color: cornflowerblue; }
+  .hero .heroPresentacion p {
+    font-size: medium; }
+  .hero .heroMapaGlobal {
+    border: 5px;
+    position: relative; }
+    .hero .heroMapaGlobal h2 {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      color: rgba(167, 211, 211, 0.938);
+      background-color: rgba(128, 128, 128, 0.404); }
+    .hero .heroMapaGlobal img {
+      width: 100%;
+      object-fit: cover; }
+
+/**********************************/
+/* el MAIN de los PUNTOS DE INTERES     */
+/**********************************/
+.puntosInteres {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: datos;
+  background-color: beige;
+  padding: 10px; }
+  .puntosInteres .poisDetalle {
+    font-family: "Roboto", sans-serif;
+    width: 50%;
+    padding: 10px; }
+    .puntosInteres .poisDetalle .datosPois .datosPois_nombre {
+      background-color: #5786a1;
+      color: beige;
+      font-size: x-large; }
+    .puntosInteres .poisDetalle .datosPois div label {
+      color: #5786a1; }
+  .puntosInteres .poisGaleria {
+    font-family: "Roboto", sans-serif;
+    width: 50%;
+    padding: 10px; }
+    .puntosInteres .poisGaleria .poisMapa h5 {
+      font-weight: bold;
+      color: #5786a1; }
+    .puntosInteres .poisGaleria .poisFotos h5 {
+      font-weight: bold;
+      color: #5786a1; }
+
+/**************************/
+/* el MAIN de la HOME     */
+/* SECCION introduccion en el ASIDE  */
+/**************************/
+.intro {
+  grid-area: intro;
+  display: grid;
+  background-color: beige;
+  padding: 5px; }
+  .intro .introLista ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 20px; }
+    .intro .introLista ul li div h3 {
+      font-size: large;
+      color: cornflowerblue; }
+      .intro .introLista ul li div h3:hover {
+        color: blue; }
+    .intro .introLista ul li div p {
+      font-size: medium; }
+    .intro .introLista ul li div a {
+      font-size: small; }
+
+/**********************************************************/
+/** LISTA de PUNTOS DE INTERES -->
+/**********************************************************/
+.asideListaCardPois {
+  font-family: "Roboto", sans-serif;
+  grid-area: aside;
+  display: grid;
+  background-color: rgba(233, 211, 183, 0.452);
+  padding: 10px; }
+  .asideListaCardPois h3 {
+    background-color: rgba(161, 118, 61, 0.452);
+    text-align: center; }
+  .asideListaCardPois div h5 {
+    background-color: rgba(218, 189, 151, 0.452);
+    text-align: left; }
+
+.pie {
+  font-family: "Roboto", sans-serif;
+  grid-area: foot;
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #5786a1; }
+  .pie .pieNosotros h4 {
+    color: #0d3555; }
+  .pie .pieNosotros p:hover {
+    color: #0d3555; }
+  .pie .pieDatosUtiles h4 {
+    color: #0d3555; }
+  .pie .pieDatosUtiles p:hover {
+    color: #0d3555; }
+  .pie .pieRedes h4 {
+    color: #0d3555; }
+  .pie .pieRedes p:hover {
+    color: #0d3555; }
+
+/**********************************************************/
+/* RESPONSIVES                                              */
+/* A DISPOSITIVO TABLET 700PXS                            */
+/**********************************************************/
+@media screen and (max-width: 700px) {
+  /***** DE LA HOME *******/
+  .grid-container-home {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "head"
+ "nav"
+ "main"
+ "main"
+ "intro"
+ "foot"; }
+  .cabecera {
+    grid-area: head;
+    display: flex;
+    flex-direction: column; }
+  .tituloProyecto {
+    justify-self: left;
+    align-self: left; }
+  .tituloProyecto h1 {
+    font-size: 20px; }
+  .logo img {
+    display: none; }
+  .heroPresentacion h1 {
+    font-size: medium; }
+  .heroPresentacion p {
+    font-size: small; }
+  .introLista ul div h3 {
+    font-size: medium;
+    color: cornflowerblue; }
+  .introLista ul div p {
+    font-size: small; }
+  .introLista ul div a {
+    font-size: x-small; }
+  /***** DE los puntos de interes POIs *******/
+  .grid-container-pois {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "head head "
+ "nav nav  "
+ "datos aside"
+ "datos aside"
+ "datos aside"
+ "foot foot"; }
+  .puntosInteres {
+    font-family: "Roboto", sans-serif;
+    grid-area: datos;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    padding: 10px;
+    width: 100%; }
+  .poisDetalle {
+    width: 100%; }
+  .poisGaleria {
+    width: 100%;
+    padding: 0; }
+  .pie {
+    flex-direction: column; } }
+
+/**********************************************************/
+/* RESPONSIVES                                              */
+/* A DISPOSITIVO MOBILE 350PXS                            */
+/**********************************************************/
+@media screen and (max-width: 350px) {
+  /***** DE LA HOME *******/
+  .grid-container-home {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "head "
+ "nav"
+ "main"
+ "main"
+ "intro"
+ "foot"; }
+  .cabecera {
+    grid-area: head;
+    display: flex;
+    flex-direction: column; }
+  .logo img {
+    display: none; }
+  .tituloProyecto h1 {
+    font-size: 15px; }
+  .menuPrincipal ul {
+    flex-direction: column;
+    text-align: left; }
+  .menuPrincipal ul li a {
+    font-size: 10px;
+    text-align: left; }
+  .menuPrincipal ul li p {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    text-align: left; }
+  /***** DE los puntos de interes POIs *******/
+  .grid-container-pois {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "head"
+ "nav  "
+ "aside"
+ "datos"
+ "datos"
+ "datos"
+ "foot"; } }

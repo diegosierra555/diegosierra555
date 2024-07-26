@@ -1,0 +1,41 @@
+.pie{
+    font-family: "Roboto", sans-serif;
+    grid-area:foot ;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(87, 134, 161);
+    .pieNosotros{
+        h4{    
+            color: rgb(13, 53, 85);}
+        p{
+            &:hover{
+                color:rgb(13, 53, 85);
+            }
+        }
+    }
+    .pieDatosUtiles{
+        h4{
+            color: rgb(13, 53, 85);
+        }
+        p{
+            &:hover{
+                color: rgb(13, 53, 85);
+            }
+        }
+    }
+    .pieRedes{
+        h4{
+            color: rgb(13, 53, 85);
+        }
+        p{
+            &:hover{
+                color: rgb(13, 53, 85);
+            }
+        }
+    }
+}
+

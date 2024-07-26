@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** FONT **/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/** ********************************************************** **/
+/** DISEÑO DE LO GENERAL  **/
+/** ********************************************************** **/
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+/** LO QUE PISE DE BOOTSTRAP **/
+.navbar {
+    grid-area: nav;
+    display: grid;
+    background-color:azure;
+    }
+.container-fluid{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px ;
+    background-color:azure;
+    color: rgb(49, 160, 160);
+}
+.nav-item{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.container-fluid div a {
+    color: rgb(49, 160, 160);
+}

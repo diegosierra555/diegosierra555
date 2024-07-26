@@ -1,0 +1,100 @@
+/**************************/
+/* el MAIN de la HOME  */
+/* SECCION hero  */
+/**************************/
+.hero{
+    font-family: "Roboto", sans-serif;
+    grid-area:main;
+    display: grid;
+    background-color: beige;
+    padding: 10px;
+    .heroPresentacion{
+            h1{
+                font-size: x-large;
+                color: cornflowerblue;
+            }
+            p{
+                font-size: medium;
+            }
+   
+
+    }
+    .heroMapaGlobal{
+        border: 5px  ;
+        position: relative;
+        h2{
+            position: absolute;
+            width: 100% ;
+            top: 0;
+            color: rgba(167, 211, 211, 0.938);
+            background-color: rgba(128, 128, 128, 0.404) ;
+        
+        }
+        img{
+            width: 100% ;
+            object-fit: cover;
+        }
+    }
+}
+
+
+/**********************************/
+/* el MAIN de los PUNTOS DE INTERES     */
+/**********************************/
+.puntosInteres{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: datos;
+    background-color: beige;
+    padding: 10px;
+        .poisDetalle{
+            font-family: "Roboto", sans-serif;
+            width: 50%;
+            padding: 10px;
+            .datosPois{
+
+                .datosPois_nombre{
+                    background-color: rgb(87, 134, 161);
+                    color: beige;
+                    font-size:x-large;
+                    }        
+                div{
+                    label{
+                        color:  rgb(87, 134, 161);
+                    }
+                    input{
+
+                    }
+                }    
+                fieldset{
+
+                }                                   
+            }
+        }
+        .poisGaleria{
+            font-family: "Roboto", sans-serif;
+            width: 50%;
+            padding: 10px;
+            .poisMapa{
+                h5{
+                    font-weight:bold;
+                    color:  rgb(87, 134, 161);
+                }
+                iframe{
+
+                }
+            }
+            .poisFotos{
+                h5{
+                    font-weight:bold;
+                    color:  rgb(87, 134, 161);
+                }
+                iframe{
+
+                }
+
+            }
+
+}
+}
