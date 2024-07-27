@@ -63,9 +63,6 @@
                     label{
                         color:  rgb(87, 134, 161);
                     }
-                    input{
-
-                    }
                 }    
                 fieldset{
 
@@ -97,4 +94,41 @@
             }
 
 }
+}
+/**************************/
+/* el MAIN de la HOME  */
+/* SECCION hero  */
+/**************************/
+.viajes{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: datos;
+    background-color: beige;
+    padding: 10px;
+    .viajesDetalle{
+        font-family: "Roboto", sans-serif;
+        padding: 10px;
+        width: 100%;
+        .viajesDetalleTitulo{
+                h1{color: cornflowerblue;
+                    font-size:large;
+                }
+        }
+        .datosViaje{
+            h2{
+                background-color: rgb(87, 134, 161);
+                color: beige;
+                font-size:x-large;
+            }
+            p{
+                color: blueviolet;
+            }
+        }
+        }
+    .agendaViaje{
+    background-color: aqua;
+    grid-area: datos;
+    width: 100%;
+    }
 }

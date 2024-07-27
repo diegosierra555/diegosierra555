@@ -35,7 +35,7 @@
     }
 }
 /********************************/
-/** GRID CONTAINER DEL HOME +/
+/** GRID CONTAINER DEL PUNTOS DE INTERES +/
 /********************************/
 
 .grid-container-pois{
@@ -51,5 +51,25 @@
     "datos datos aside"
     "datos datos aside"
     "foot foot foot";
+
+}
+
+/********************************/
+/** GRID CONTAINER DE VIAJES  **/
+/********************************/
+
+.grid-container-viajes{
+    width: 100%;
+    margin: 0 auto;
+    /** habilita la grilla de los puntos de interes**/ 
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "head head"
+    "nav nav "
+    "datos aside"
+    "datos aside"
+    "foot foot";
 
 }
