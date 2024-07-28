@@ -70,9 +70,33 @@ body {
   grid-template-areas: "head head head" "nav nav nav " "datos datos aside" "datos datos aside" "foot foot foot"; }
 
 /********************************/
+/** GRID CONTAINER DE CIUDADES  */
+/********************************/
+.grid-container-ciudades {
+  width: 100%;
+  margin: 0 auto;
+  /** habilita la grilla de los puntos de interes**/
+  display: grid;
+  grid-template-columns: 2.5fr 1.5fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "head head head" "nav nav nav " "datos datos aside" "datos datos aside" "foot foot foot"; }
+
+/********************************/
 /** GRID CONTAINER DE VIAJES  **/
 /********************************/
 .grid-container-viajes {
+  width: 100%;
+  margin: 0 auto;
+  /** habilita la grilla de los puntos de interes**/
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "head head" "nav nav " "datos aside" "datos aside" "foot foot"; }
+
+/********************************/
+/** GRID CONTAINER DE PASAJEROS  **/
+/********************************/
+.grid-container-pasajeros {
   width: 100%;
   margin: 0 auto;
   /** habilita la grilla de los puntos de interes**/
@@ -142,7 +166,55 @@ body {
 
 /**************************/
 /* el MAIN de la HOME  */
-/* SECCION hero  */
+/* SECCION armado de  REGIONES  */
+/**************************/
+.ciudades {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  grid-area: datos;
+  background-color: beige;
+  padding: 10px; }
+  .ciudades .ciudadDetalle {
+    font-family: "Roboto", sans-serif;
+    width: 50%;
+    padding: 10px; }
+    .ciudades .ciudadDetalle .ciudadDetalleTitulo h2 {
+      color: cornflowerblue;
+      font-size: large; }
+    .ciudades .ciudadDetalle .datosCiudad h3 {
+      background-color: #5786a1;
+      color: beige;
+      font-size: x-large; }
+    .ciudades .ciudadDetalle .cardsHospedajes {
+      font-family: "Roboto", sans-serif;
+      width: 900px;
+      padding: 10px; }
+      .ciudades .ciudadDetalle .cardsHospedajes h4 {
+        font-weight: bold;
+        color: #5786a1; }
+    .ciudades .ciudadDetalle .ciudadMultimedia .mapaCiudad {
+      font-family: "Roboto", sans-serif;
+      width: 50%;
+      padding: 10px; }
+      .ciudades .ciudadDetalle .ciudadMultimedia .mapaCiudad h4 {
+        font-weight: bold;
+        color: #5786a1; }
+      .ciudades .ciudadDetalle .ciudadMultimedia .mapaCiudad h5 {
+        font-weight: bold;
+        color: #5786a1; }
+    .ciudades .ciudadDetalle .ciudadMultimedia .galeriaCiudad {
+      font-family: "Roboto", sans-serif;
+      width: 50%;
+      padding: 10px; }
+      .ciudades .ciudadDetalle .ciudadMultimedia .galeriaCiudad h5 {
+        font-weight: bold;
+        color: #5786a1; }
+
+/**************************/
+/* el MAIN de la HOME  */
+/* SECCION armado de  VIAJES  */
 /**************************/
 .viajes {
   font-family: "Roboto", sans-serif;
@@ -168,6 +240,33 @@ body {
     background-color: aqua;
     grid-area: datos;
     width: 100%; }
+
+/**************************/
+/* el MAIN de la HOME  */
+/* SECCION armado de  VIAJES  */
+/**************************/
+.pasajeros {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: datos;
+  background-color: beige;
+  padding: 10px; }
+  .pasajeros .pasajerosDetalle {
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+    width: 75%; }
+    .pasajeros .pasajerosDetalle .pasajerosDetalleTitulo h2 {
+      color: cornflowerblue;
+      font-size: large; }
+    .pasajeros .pasajerosDetalle .datosPasajero .datosPasajero_nombreCompleto {
+      background-color: #5786a1;
+      color: beige;
+      font-size: x-large; }
+    .pasajeros .pasajerosDetalle .fotoPasajero {
+      background-color: aqua;
+      grid-area: datos;
+      width: 25%; }
 
 /**************************/
 /* el MAIN de la HOME     */
@@ -213,6 +312,22 @@ body {
     text-align: left; }
 
 /**********************************************************/
+/** LISTA de CIUDADES & REGIONES -->
+/**********************************************************/
+.asideListaCardLugar {
+  font-family: "Roboto", sans-serif;
+  grid-area: aside;
+  display: grid;
+  background-color: rgba(233, 211, 183, 0.452);
+  padding: 10px; }
+  .asideListaCardLugar h3 {
+    background-color: rgba(161, 118, 61, 0.452);
+    text-align: center; }
+  .asideListaCardLugar .card .card-body h5 {
+    background-color: rgba(218, 189, 151, 0.452);
+    text-align: left; }
+
+/**********************************************************/
 /** LISTA de VIAJES-->
 /**********************************************************/
 .asideListaViajes {
@@ -235,6 +350,22 @@ body {
     text-align: left;
     font-size: large;
     height: max-content; }
+
+/**********************************************************/
+/** LISTA de PASAJEROS -->
+/**********************************************************/
+.asideListaPasajeros {
+  font-family: "Roboto", sans-serif;
+  grid-area: aside;
+  display: grid;
+  background-color: rgba(233, 211, 183, 0.452);
+  padding: 10px; }
+  .asideListaPasajeros h3 {
+    background-color: rgba(161, 118, 61, 0.452);
+    text-align: center; }
+  .asideListaPasajeros .card .card-body h5 {
+    background-color: rgba(218, 189, 151, 0.452);
+    text-align: left; }
 
 .pie {
   font-family: "Roboto", sans-serif;

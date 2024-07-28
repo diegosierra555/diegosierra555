@@ -55,10 +55,51 @@
 }
 
 /********************************/
+/** GRID CONTAINER DE CIUDADES  */
+/********************************/
+
+.grid-container-ciudades{
+    width: 100%;
+    margin: 0 auto;
+    /** habilita la grilla de los puntos de interes**/ 
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "head head head"
+    "nav nav nav "
+    "datos datos aside"
+    "datos datos aside"
+    "foot foot foot";
+
+}
+
+
+/********************************/
 /** GRID CONTAINER DE VIAJES  **/
 /********************************/
 
 .grid-container-viajes{
+    width: 100%;
+    margin: 0 auto;
+    /** habilita la grilla de los puntos de interes**/ 
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "head head"
+    "nav nav "
+    "datos aside"
+    "datos aside"
+    "foot foot";
+
+}
+
+/********************************/
+/** GRID CONTAINER DE PASAJEROS  **/
+/********************************/
+
+.grid-container-pasajeros{
     width: 100%;
     margin: 0 auto;
     /** habilita la grilla de los puntos de interes**/ 
