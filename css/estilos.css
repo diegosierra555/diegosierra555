@@ -234,10 +234,7 @@ body {
       background-color: #5786a1;
       color: beige;
       font-size: x-large; }
-    .viajes .viajesDetalle .datosViaje p {
-      color: blueviolet; }
   .viajes .agendaViaje {
-    background-color: aqua;
     grid-area: datos;
     width: 100%; }
 
@@ -264,7 +261,6 @@ body {
       color: beige;
       font-size: x-large; }
     .pasajeros .pasajerosDetalle .fotoPasajero {
-      background-color: aqua;
       grid-area: datos;
       width: 25%; }
 
@@ -363,9 +359,11 @@ body {
   .asideListaPasajeros h3 {
     background-color: rgba(161, 118, 61, 0.452);
     text-align: center; }
-  .asideListaPasajeros .card .card-body h5 {
-    background-color: rgba(218, 189, 151, 0.452);
-    text-align: left; }
+  .asideListaPasajeros .card {
+    background-color: rgba(233, 211, 183, 0.452); }
+    .asideListaPasajeros .card .card-body h5 {
+      background-color: rgba(218, 189, 151, 0.452);
+      text-align: left; }
 
 .pie {
   font-family: "Roboto", sans-serif;
@@ -389,6 +387,19 @@ body {
     color: #0d3555; }
   .pie .pieRedes p:hover {
     color: #0d3555; }
+
+/**********************************************************/
+/* RESPONSIVES                                              */
+/* A DISPOSITIVO TABLET 1000PXS                            */
+/**********************************************************/
+@media screen and (max-width: 1000px) {
+  /***** DE LA CIUDADES & REGIONES  *******/
+  /**** area main donde hospedarse */
+  .cardsHospedajes {
+    font-family: "Roboto", sans-serif; }
+    .cardsHospedajes .card-group {
+      width: 50%;
+      padding: 5px; } }
 
 /**********************************************************/
 /* RESPONSIVES                                              */
@@ -440,6 +451,27 @@ body {
   .poisGaleria {
     width: 100%;
     padding: 0; }
+  /***** DE LA CIUDADES & REGIONES  *******/
+  /**** area main donde hospedarse */
+  .grid-container-ciudades {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "head head " "nav nav  " "datos aside" "datos aside" "datos aside" "foot foot"; }
+  .ciudadDetalle {
+    padding: 5px; }
+    .ciudadDetalle .ciudadDetalleTitulo h2 {
+      font-size: small; }
+    .ciudadDetalle .datosCiudad h3 {
+      font-size: medium; }
+  .cardsHospedajes .card-group {
+    width: 100%;
+    padding: 2px; }
+  /***************************/
+  /* ASIDE de LUGARES       */
+  /* REDUZCO EL TAMAÑO       */
+  /**************************/
+  .asideListaCardLugar .card {
+    width: 100px; }
   .pie {
     flex-direction: column; } }
 
@@ -476,4 +508,39 @@ body {
   .grid-container-pois {
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas: "head" "nav  " "aside" "datos" "datos" "datos" "foot"; } }
+    grid-template-areas: "head" "nav  " "aside" "datos" "datos" "datos" "foot"; }
+  /***** DE LA CIUDADES & REGIONES  *******/
+  /**** area main */
+  .grid-container-ciudades {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "head" "nav" "aside" "datos" "datos" "datos" "foot"; }
+  .ciudades {
+    display: flex;
+    flex-direction: column; }
+    .ciudades .ciudadDetalle {
+      width: 75%; }
+  /***** DE LOS VIAJES  *******/
+  /**** area main */
+  .grid-container-viajes {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "head" "nav" "aside" "datos" "datos" "datos" "foot"; }
+  .datosViaje .datosViajeNombre {
+    font-size: small; }
+  /***** DE LOS PASAJEROS  *******/
+  /**** area main */
+  .grid-container-pasajeros {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "head" "nav" "aside" "datos" "datos" "datos" "foot"; }
+  .pasajeros {
+    grid-area: datos;
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  .asideListaPasajeros .card {
+    background-color: rgba(233, 211, 183, 0.452);
+    width: 75%; }
+  .pie {
+    flex-direction: column; } }

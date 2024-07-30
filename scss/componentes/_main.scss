@@ -186,13 +186,11 @@
                 color: beige;
                 font-size:x-large;
             }
-            p{
-                color: blueviolet;
-            }
+  
         }
         }
     .agendaViaje{
-    background-color: aqua;
+  
     grid-area: datos;
     width: 100%;
     }
@@ -227,7 +225,6 @@
             }
         }
         .fotoPasajero{
-            background-color: aqua;
             grid-area: datos;
             width: 25%;
         }
