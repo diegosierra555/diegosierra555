@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css"/>
-    <title>Viajes & Vacaciones - Ciudades & Lugares</title>
+    <!-- FAVICON 16x16 -->
+    <link rel="shortcut icon" href="../img/icon_suitcase.png" type="image/x-icon">
+    <!-- LOS META DESCRPTION Y META KEYWORDs -->
+    <meta name="description" content="Aprende a planificar viajes de trabajo o vacaciones. Colecciona los puntos de interes que deseas conocer: museos, playas, barrios, atracciones, lagos, montañas">
+    <meta name="keywords" content="viajes, vacaciones, turismo, puntos de interes, museos, playas, montaña, ubicacion, barrios, eventos, vistas">
+    
+    <title>Viajes & Vacaciones - Ciudades & Regiones</title>
 </head>
 <body>
 <div class="grid-container-ciudades"> 
@@ -85,7 +91,7 @@
                 <h4> Donde hospedarse: </h4>
                 <div class="card-group">
                   <div class="card">
-                    <img src="../img/pois/museoMoma.jpg" class="card-img-top" alt="...">
+                    <img src="../img/hospedajes/SaltaCiudad v2.png" class="card-img-top" alt="imagen nocturna del centro de la ciudad">
                     <div class="card-body">
                       <h5 class="card-title">Salta Ciudad</h5>
                       <p class="card-text">La ciudad de Salta tiene mucha oferta de alojamientos. Es recomendable alojrse cerca de la calle peatonal Balcarce ya que ofrece multiples tipos de gastronomia , bares y espectaculos.</p>
@@ -93,7 +99,7 @@
                     </div>
                   </div>
                   <div class="card">
-                    <img src="../img/regiones/ReservasTilcaraBarrio.webp" class="card-img-top" alt="...">
+                    <img src="../img/hospedajes/tilcarajpg.png" class="card-img-top" alt="imagen de una calle de barrio tipico de la ciudad de tilcara ">
                     <div class="card-body">
                       <h5 class="card-title">Tilcara & Purmamarca </h5>
                       <p class="card-text">Dormir en Tilcara es una gran opción si quieren más movimiento. Al ser más grande que Purmamarca tiene más restaurantes, bares, peñas y variedad de negocios para pasear y hacer compras. Tilcara también es una buena para recorrer la Quebrada de Humahuaca ya que está justo en el medio, entre Purmamarca y Humahuaca.</p>
@@ -101,7 +107,7 @@
                     </div>
                   </div>
                   <div class="card">
-                    <img src="../img/regiones/Reservas ruta-al-camping.jpg" class="card-img-top" alt="...">
+                    <img src="../img/hospedajes/campingHumauaca.png" class="card-img-top" alt="imagenpanoramica de varias carpas instaladas en un valle verde">
                     <div class="card-body">
                       <h5 class="card-title">Campings</h5>
                       <p class="card-text">Este es el camping más concurrido de Purmamarca ya que se encuentra bien ubicado sobre una ruta y en una esquina. Tienen cocina, duchas y almacen. Si se sigue caminando hay otro camping más barato que también es lindo y mucho más grande, pero que no cuenta con cocina gratis.</p>
@@ -119,29 +125,30 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757422.8495819326!2d-70.4404186841369!3d-23.12057691666653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9404a1f6e75c0087%3A0x815e91b230ce4e79!2sJujuy!5e0!3m2!1ses-419!2sar!4v1722192712164!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
            <div class="galeriaCiudad">
-                <h5> Fotos & Videos </h5>
-    
-              <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="../img/regiones/piscinas naturais.jpg" class="d-block w-100" alt="...">
+                <h5> Fotos & Videos :</h5>
+            <!-- CARROUSEL DE SLIDES IMAGENES -->
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                      <img src="../img/regiones/NOAslides/slidesNOA 1.jpeg" class="d-block w-100" alt="imagen de una casa de campo en un valle al pie de una montaña">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img src="../img/regiones/NOAslides/slidesNOA 2.jpeg" class="d-block w-100" alt="foto panoramica de la ciudad al pie del cerro">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../img/regiones/NOAslides/slidesNOA 3.jpeg" class="d-block w-100" alt="imagen en perspectiva de una salina y pileta natural de agua en la salina">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
-                <div class="carousel-item">
-                  <img src="../img/regiones/praiafrances.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="../img/regiones/ptebrookl.jpg" class="d-block w-100" alt="...">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-              </button>
-            </div>
+                <!-- fin del carrousel -->
           </div>
 
         </section>
@@ -155,7 +162,7 @@
             <h3>Ciudades & Regiones</h3>
            <!-- Bloque de cards de pois-->
            <div class="card" style="width: 18rem;">
-            <img src="../img/regiones/cerro7clrs.jpg" class="card-img-top" alt="...">
+            <img src="../img/regiones/NOA Argentino v1.png" class="card-img-top" alt="foto de unos niños y una llama al borde de un cerro">
             <div class="card-body">
               <h5 class="card-title">NOA Argentino</h5>
               <p class="card-text">Region puntana: Salta y Jujuy. Incluye areas como Quebrada de Humauaca, Salinas e inicio de la ruta 40 </p>
@@ -164,7 +171,7 @@
           </div>
 
           <div class="card" style="width: 18rem;">
-            <img src="../img/regiones/cerro7clrs.jpg" class="card-img-top" alt="...">
+            <img src="../img/regiones/Patagonia v1.png" class="card-img-top" alt="imagen panoramica de montañas nevadas y un lago en el valle de las montañas">
             <div class="card-body">
               <h5 class="card-title">Patagonia</h5>
               <p class="card-text">Sud-Oeste argentino, Montaña y lagos. Altamente recomendable en Otoño o Primavera. Incluye el camino de los 7 Lagos, Parque Nacional Arrayanes, Briloche y Lago Nahuel Huapi</p>
@@ -173,7 +180,7 @@
           </div>
 
           <div class="card" style="width: 18rem;">
-            <img src="../img/regiones/cerro7clrs.jpg" class="card-img-top" alt="...">
+            <img src="../img/regiones/NYC v1.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Nueva York</h5>
               <p class="card-text">Region Este de USA: incluye ciudades y barrios como: Manhattan, Brooklyn, New Jersey. Recomendable visitar en temporadas de climas moderados, no extremos.</p>
@@ -182,7 +189,7 @@
           </div>
 
           <div class="card" style="width: 18rem;">
-            <img src="../img/regiones/cerro7clrs.jpg" class="card-img-top" alt="...">
+            <img src="../img/regiones/NEBrasil v1.jpeg" class="card-img-top" alt="imagen de una playa soleada conarenas blancas y aguas turquesas">
             <div class="card-body">
               <h5 class="card-title">Sudeste Brasilero</h5>
               <p class="card-text">Mas de 2000kms de playas desde Maceio a Joao Pessoa </p>
