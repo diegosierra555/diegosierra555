@@ -20,14 +20,15 @@
 .cabecera{
     grid-area:head;
     font-family: "Roboto", sans-serif;
-    background-color: rgb(87, 134, 161) ;
+    background: rgb(77,75,108);
+    background: linear-gradient(90deg, rgba(77,75,108,1) 19%, rgba(112,112,224,0.4150035014005602) 53%, rgba(245,237,184,1) 94%);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     .logo{
         }
     .tituloProyecto{
-        color: beige;
+        color: rgb(37, 71, 134);
         justify-self: center;
         align-self: center;
         padding-right: 20px;

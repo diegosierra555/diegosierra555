@@ -46,12 +46,13 @@ body {
 .cabecera {
   grid-area: head;
   font-family: "Roboto", sans-serif;
-  background-color: #5786a1;
+  background: #4d4b6c;
+  background: linear-gradient(90deg, #4d4b6c 19%, rgba(112, 112, 224, 0.415004) 53%, #f5edb8 94%);
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
   .cabecera .tituloProyecto {
-    color: beige;
+    color: #254786;
     justify-self: center;
     align-self: center;
     padding-right: 20px;
@@ -194,8 +195,9 @@ body {
       .ciudades .ciudadDetalle .cardsHospedajes h4 {
         font-weight: bold;
         color: #5786a1; }
+      .ciudades .ciudadDetalle .cardsHospedajes .cardsHospedajesRecomendados .card .card-body h5 {
+        color: #5786a1; }
     .ciudades .ciudadDetalle .ciudadMultimedia .mapaCiudad {
-      font-family: "Roboto", sans-serif;
       width: 50%;
       padding: 10px; }
       .ciudades .ciudadDetalle .ciudadMultimedia .mapaCiudad h4 {
@@ -205,7 +207,6 @@ body {
         font-weight: bold;
         color: #5786a1; }
     .ciudades .ciudadDetalle .ciudadMultimedia .galeriaCiudad {
-      font-family: "Roboto", sans-serif;
       width: 50%;
       padding: 10px; }
       .ciudades .ciudadDetalle .ciudadMultimedia .galeriaCiudad h5 {
@@ -319,9 +320,13 @@ body {
   .asideListaCardLugar h3 {
     background-color: rgba(161, 118, 61, 0.452);
     text-align: center; }
-  .asideListaCardLugar .card .card-body h5 {
-    background-color: rgba(218, 189, 151, 0.452);
-    text-align: left; }
+  .asideListaCardLugar .card {
+    background-color: beige; }
+    .asideListaCardLugar .card .card-body {
+      background-color: beige; }
+      .asideListaCardLugar .card .card-body h5 {
+        background-color: rgba(218, 189, 151, 0.452);
+        text-align: left; }
 
 /**********************************************************/
 /** LISTA de VIAJES-->
@@ -389,12 +394,16 @@ body {
     color: #0d3555; }
 
 /**********************************************************/
+/**********************************************************/
 /* RESPONSIVES                                              */
 /* A DISPOSITIVO TABLET 1000PXS                            */
+/**********************************************************/
 /**********************************************************/
 @media screen and (max-width: 1000px) {
   /***** DE LA CIUDADES & REGIONES  *******/
   /**** area main donde hospedarse */
+  .ciudades .ciudadDetalle {
+    width: 100%; }
   .cardsHospedajes {
     font-family: "Roboto", sans-serif; }
     .cardsHospedajes .card-group {
@@ -402,8 +411,10 @@ body {
       padding: 5px; } }
 
 /**********************************************************/
-/* RESPONSIVES                                              */
+/**********************************************************/
+/* RESPONSIVES                                            */
 /* A DISPOSITIVO TABLET 700PXS                            */
+/**********************************************************/
 /**********************************************************/
 @media screen and (max-width: 700px) {
   /***** DE LA HOME *******/
@@ -444,9 +455,8 @@ body {
     display: flex;
     flex-direction: column;
     background-color: beige;
-    padding: 10px;
-    width: 100%; }
-  .poisDetalle {
+    padding: 10px; }
+  .puntosInteres .poisDetalle {
     width: 100%; }
   .poisGaleria {
     width: 100%;
@@ -457,15 +467,17 @@ body {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto auto auto auto auto auto;
     grid-template-areas: "head head " "nav nav  " "datos aside" "datos aside" "datos aside" "foot foot"; }
-  .ciudadDetalle {
-    padding: 5px; }
-    .ciudadDetalle .ciudadDetalleTitulo h2 {
-      font-size: small; }
-    .ciudadDetalle .datosCiudad h3 {
-      font-size: medium; }
-  .cardsHospedajes .card-group {
-    width: 100%;
-    padding: 2px; }
+  .ciudades {
+    width: 100%; }
+    .ciudades .ciudadDetalle {
+      padding: 5px; }
+      .ciudades .ciudadDetalle .ciudadDetalleTitulo h2 {
+        font-size: small; }
+      .ciudades .ciudadDetalle .datosCiudad h3 {
+        font-size: medium; }
+    .ciudades .cardsHospedajes .card-group {
+      width: 100%;
+      padding: 2px; }
   /***************************/
   /* ASIDE de LUGARES       */
   /* REDUZCO EL TAMAÑO       */
@@ -476,8 +488,10 @@ body {
     flex-direction: column; } }
 
 /**********************************************************/
+/**********************************************************/
 /* RESPONSIVES                                              */
 /* A DISPOSITIVO MOBILE 350PXS                            */
+/**********************************************************/
 /**********************************************************/
 @media screen and (max-width: 350px) {
   /***** DE LA HOME *******/
@@ -509,6 +523,8 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto auto auto;
     grid-template-areas: "head" "nav  " "aside" "datos" "datos" "datos" "foot"; }
+  .puntosInteres .poisDetalle {
+    width: 100%; }
   /***** DE LA CIUDADES & REGIONES  *******/
   /**** area main */
   .grid-container-ciudades {
@@ -520,14 +536,27 @@ body {
     flex-direction: column; }
     .ciudades .ciudadDetalle {
       width: 75%; }
+  .cardsHospedajes .cardsHospedajesRecomendados .card {
+    width: 600px; }
+    .cardsHospedajes .cardsHospedajesRecomendados .card img {
+      width: 280px;
+      height: 160px; }
+  .ciudadMultimedia .mapaCiudad {
+    width: 300px; }
+  .ciudadMultimedia .galeriaCiudad {
+    width: 75%; }
   /***** DE LOS VIAJES  *******/
   /**** area main */
   .grid-container-viajes {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto auto auto auto auto auto;
     grid-template-areas: "head" "nav" "aside" "datos" "datos" "datos" "foot"; }
-  .datosViaje .datosViajeNombre {
+  .viajes .viajesDetalle .datosViaje .datosViajeNombre {
     font-size: small; }
+  .viajes .agendaViaje {
+    grid-area: datos;
+    width: 100%;
+    font-size: x-small; }
   /***** DE LOS PASAJEROS  *******/
   /**** area main */
   .grid-container-pasajeros {

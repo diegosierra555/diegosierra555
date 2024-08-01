@@ -132,10 +132,21 @@
                 font-weight:bold;
                 color:  rgb(87, 134, 161);
             }
+            .cardsHospedajesRecomendados{
+                .card{
+                    .card-body{
+                        
+                        h5{
+                            color: rgb(87, 134, 161);
+                        }
+                    }
+
+                }
+            }
         }
     .ciudadMultimedia{
             .mapaCiudad{
-                font-family: "Roboto", sans-serif;
+                
                 width: 50%;
                 padding: 10px;
                 h4{ 
@@ -148,7 +159,7 @@
                 }
             }
             .galeriaCiudad{
-                font-family: "Roboto", sans-serif;
+            
                 width: 50%;
                 padding: 10px;
                      h5{
@@ -190,9 +201,8 @@
         }
         }
     .agendaViaje{
-  
-    grid-area: datos;
-    width: 100%;
+        grid-area: datos;
+        width: 100%;
     }
 }
 
